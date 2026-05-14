@@ -14,15 +14,23 @@ namespace CodeWarsTest
             //Console.WriteLine(results2);
             //Console.WriteLine(results3);
 
-            string dnaResults = ComplementaryDNA.MakeComplement("AAAA");
-            string dnaResults2 = ComplementaryDNA.MakeComplement("ATTGC");
-            string dnaResults3 = ComplementaryDNA.MakeComplement("CGCG");
-            string dnaResults4 = ComplementaryDNA.MakeComplement("GTATCGATCGATCGATCGATTATATTTTCGACGAGATTTAAATATATATATATACGAGAGAATACAGATAGACAGATTA");
+            //string dnaResults = ComplementaryDNA.MakeComplement("AAAA");
+            //string dnaResults2 = ComplementaryDNA.MakeComplement("ATTGC");
+            //string dnaResults3 = ComplementaryDNA.MakeComplement("CGCG");
+            //string dnaResults4 = ComplementaryDNA.MakeComplement("GTATCGATCGATCGATCGATTATATTTTCGACGAGATTTAAATATATATATATACGAGAGAATACAGATAGACAGATTA");
 
-            Console.WriteLine(dnaResults);
-            Console.WriteLine(dnaResults2);
-            Console.WriteLine(dnaResults3);
-            Console.WriteLine(dnaResults4);
+            //Console.WriteLine(dnaResults);
+            //Console.WriteLine(dnaResults2);
+            //Console.WriteLine(dnaResults3);
+            //Console.WriteLine(dnaResults4);
+
+            string result = ConvertToCamelCase.ToCamelCase("the-stealth-warrior");
+            string result2 = ConvertToCamelCase.ToCamelCase("The_Stealth_Warrior");
+            string result3 = ConvertToCamelCase.ToCamelCase("The_Stealth-Warrior");
+
+            Console.WriteLine(result);
+            Console.WriteLine(result2);
+            Console.WriteLine(result3);
 
             Console.ReadKey();
         }
