@@ -24,13 +24,21 @@ namespace CodeWarsTest
             //Console.WriteLine(dnaResults3);
             //Console.WriteLine(dnaResults4);
 
-            string result = ConvertToCamelCase.ToCamelCase("the-stealth-warrior");
-            string result2 = ConvertToCamelCase.ToCamelCase("The_Stealth_Warrior");
-            string result3 = ConvertToCamelCase.ToCamelCase("The_Stealth-Warrior");
+            //string result = ConvertToCamelCase.ToCamelCase("the-stealth-warrior");
+            //string result2 = ConvertToCamelCase.ToCamelCase("The_Stealth_Warrior");
+            //string result3 = ConvertToCamelCase.ToCamelCase("The_Stealth-Warrior");
 
-            Console.WriteLine(result);
-            Console.WriteLine(result2);
-            Console.WriteLine(result3);
+            //Console.WriteLine(result);
+            //Console.WriteLine(result2);
+            //Console.WriteLine(result3);
+
+            int[] result = ArrayDifference.ArrayDiff(new[] { 1, 2, 2 }, new[] { 1 });
+            int[] result2 = ArrayDifference.ArrayDiff(new[] { 1, 2, 2 }, new int[] { });
+            int[] result3 = ArrayDifference.ArrayDiff(new[] { 1, 2, 3 }, new[] { 1, 2 });
+
+            Console.WriteLine(string.Join(", ", result));
+            Console.WriteLine(string.Join(", ", result2));
+            Console.WriteLine(string.Join(", ", result3));
 
             Console.ReadKey();
         }
