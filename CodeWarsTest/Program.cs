@@ -40,11 +40,23 @@ namespace CodeWarsTest
             //Console.WriteLine(string.Join(", ", result2));
             //Console.WriteLine(string.Join(", ", result3));
 
-            string result = StockList.stockSummary(new string[] { "ABAR 200", "CDXE 500", "BKWR 250", "BTSQ 890", "DRTY 600" }, new string[] { "A", "B" });
-            string result2 = StockList.stockSummary(new string[] { "ABART 20", "CDXEF 50", "BKWRK 25", "BTSQZ 89", "DRTYM 60" }, new string[] { "A", "B", "C", "W" });
+            //string result = StockList.stockSummary(new string[] { "ABAR 200", "CDXE 500", "BKWR 250", "BTSQ 890", "DRTY 600" }, new string[] { "A", "B" });
+            //string result2 = StockList.stockSummary(new string[] { "ABART 20", "CDXEF 50", "BKWRK 25", "BTSQZ 89", "DRTYM 60" }, new string[] { "A", "B", "C", "W" });
 
-            Console.WriteLine(result);
-            Console.WriteLine(result2);
+            //Console.WriteLine(result);
+            //Console.WriteLine(result2);
+
+            string battleResult = GoodVsEvilBattle.GoodVsEvil("1 1 1 1 1 1", "1 1 1 1 1 1 1");
+            string battleResult2 = GoodVsEvilBattle.GoodVsEvil("0 0 0 0 0 10", "0 1 1 1 1 0 0");
+            string battleResult3 = GoodVsEvilBattle.GoodVsEvil("1 0 0 0 0 0", "1 0 0 0 0 0 0");
+            string battleResult4 = GoodVsEvilBattle.GoodVsEvil("1 0 0 0 1 0", "0 0 0 0 0 1 0");
+            string battleResult5 = GoodVsEvilBattle.GoodVsEvil("0 1 0 0 0 0", "1 0 0 0 0 0 0");
+
+            Console.WriteLine(battleResult);
+            Console.WriteLine(battleResult2);
+            Console.WriteLine(battleResult3);
+            Console.WriteLine(battleResult4);
+            Console.WriteLine(battleResult5);
 
             Console.ReadKey();
         }
