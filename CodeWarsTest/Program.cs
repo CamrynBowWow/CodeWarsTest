@@ -32,13 +32,19 @@ namespace CodeWarsTest
             //Console.WriteLine(result2);
             //Console.WriteLine(result3);
 
-            int[] result = ArrayDifference.ArrayDiff(new[] { 1, 2, 2 }, new[] { 1 });
-            int[] result2 = ArrayDifference.ArrayDiff(new[] { 1, 2, 2 }, new int[] { });
-            int[] result3 = ArrayDifference.ArrayDiff(new[] { 1, 2, 3 }, new[] { 1, 2 });
+            //int[] result = ArrayDifference.ArrayDiff(new[] { 1, 2, 2 }, new[] { 1 });
+            //int[] result2 = ArrayDifference.ArrayDiff(new[] { 1, 2, 2 }, new int[] { });
+            //int[] result3 = ArrayDifference.ArrayDiff(new[] { 1, 2, 3 }, new[] { 1, 2 });
 
-            Console.WriteLine(string.Join(", ", result));
-            Console.WriteLine(string.Join(", ", result2));
-            Console.WriteLine(string.Join(", ", result3));
+            //Console.WriteLine(string.Join(", ", result));
+            //Console.WriteLine(string.Join(", ", result2));
+            //Console.WriteLine(string.Join(", ", result3));
+
+            string result = StockList.stockSummary(new string[] { "ABAR 200", "CDXE 500", "BKWR 250", "BTSQ 890", "DRTY 600" }, new string[] { "A", "B" });
+            string result2 = StockList.stockSummary(new string[] { "ABART 20", "CDXEF 50", "BKWRK 25", "BTSQZ 89", "DRTYM 60" }, new string[] { "A", "B", "C", "W" });
+
+            Console.WriteLine(result);
+            Console.WriteLine(result2);
 
             Console.ReadKey();
         }

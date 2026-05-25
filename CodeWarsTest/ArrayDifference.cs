@@ -15,21 +15,6 @@
             first.RemoveAll(x => second.Contains(x));
 
             return first.ToArray();
-
-            //int[] newArray = [];
-
-            //for (int j = 0; j < b.Length; j++)
-            //{
-            //    for (int i = 0; i < a.Length; i++)
-            //    {
-            //        if (a[i] != b[j])
-            //        {
-            //            newArray = newArray.Append(a[i]).ToArray();
-            //        }
-            //    }
-            //}
-
-            //return newArray;
         }
     }
 }
