@@ -46,17 +46,25 @@ namespace CodeWarsTest
             //Console.WriteLine(result);
             //Console.WriteLine(result2);
 
-            string battleResult = GoodVsEvilBattle.GoodVsEvil("1 1 1 1 1 1", "1 1 1 1 1 1 1");
-            string battleResult2 = GoodVsEvilBattle.GoodVsEvil("0 0 0 0 0 10", "0 1 1 1 1 0 0");
-            string battleResult3 = GoodVsEvilBattle.GoodVsEvil("1 0 0 0 0 0", "1 0 0 0 0 0 0");
-            string battleResult4 = GoodVsEvilBattle.GoodVsEvil("1 0 0 0 1 0", "0 0 0 0 0 1 0");
-            string battleResult5 = GoodVsEvilBattle.GoodVsEvil("0 1 0 0 0 0", "1 0 0 0 0 0 0");
+            //string battleResult = GoodVsEvilBattle.GoodVsEvil("1 1 1 1 1 1", "1 1 1 1 1 1 1");
+            //string battleResult2 = GoodVsEvilBattle.GoodVsEvil("0 0 0 0 0 10", "0 1 1 1 1 0 0");
+            //string battleResult3 = GoodVsEvilBattle.GoodVsEvil("1 0 0 0 0 0", "1 0 0 0 0 0 0");
+            //string battleResult4 = GoodVsEvilBattle.GoodVsEvil("1 0 0 0 1 0", "0 0 0 0 0 1 0");
+            //string battleResult5 = GoodVsEvilBattle.GoodVsEvil("0 1 0 0 0 0", "1 0 0 0 0 0 0");
 
-            Console.WriteLine(battleResult);
-            Console.WriteLine(battleResult2);
-            Console.WriteLine(battleResult3);
-            Console.WriteLine(battleResult4);
-            Console.WriteLine(battleResult5);
+            //Console.WriteLine(battleResult);
+            //Console.WriteLine(battleResult2);
+            //Console.WriteLine(battleResult3);
+            //Console.WriteLine(battleResult4);
+            //Console.WriteLine(battleResult5);
+
+            string weirdStringResult = WeirdStringCase.ToWeirdCase("String");
+            string weirdStringResult2 = WeirdStringCase.ToWeirdCase("Weird string case");
+            string weirdStringResult3 = WeirdStringCase.ToWeirdCase("This is a test");
+
+            Console.WriteLine(weirdStringResult);
+            Console.WriteLine(weirdStringResult2);
+            Console.WriteLine(weirdStringResult3);
 
             Console.ReadKey();
         }
