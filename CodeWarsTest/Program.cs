@@ -58,13 +58,25 @@ namespace CodeWarsTest
             //Console.WriteLine(battleResult4);
             //Console.WriteLine(battleResult5);
 
-            string weirdStringResult = WeirdStringCase.ToWeirdCase("String");
-            string weirdStringResult2 = WeirdStringCase.ToWeirdCase("Weird string case");
-            string weirdStringResult3 = WeirdStringCase.ToWeirdCase("This is a test");
+            //string weirdStringResult = WeirdStringCase.ToWeirdCase("String");
+            //string weirdStringResult2 = WeirdStringCase.ToWeirdCase("Weird string case");
+            //string weirdStringResult3 = WeirdStringCase.ToWeirdCase("This is a test");
 
-            Console.WriteLine(weirdStringResult);
-            Console.WriteLine(weirdStringResult2);
-            Console.WriteLine(weirdStringResult3);
+            //Console.WriteLine(weirdStringResult);
+            //Console.WriteLine(weirdStringResult2);
+            //Console.WriteLine(weirdStringResult3);
+
+            string firstLetter = FirstNonRepeatingCharacter.FirstNonRepeatingLetter("a");
+            string firstLetter2 = FirstNonRepeatingCharacter.FirstNonRepeatingLetter("stress");
+            string firstLetter3 = FirstNonRepeatingCharacter.FirstNonRepeatingLetter("moonmen");
+            string firstLetter4 = FirstNonRepeatingCharacter.FirstNonRepeatingLetter("sTreSS");
+            string firstLetter5 = FirstNonRepeatingCharacter.FirstNonRepeatingLetter("checkText");
+
+            Console.WriteLine(firstLetter);
+            Console.WriteLine(firstLetter2);
+            Console.WriteLine(firstLetter3);
+            Console.WriteLine(firstLetter4);
+            Console.WriteLine(firstLetter5);
 
             Console.ReadKey();
         }
