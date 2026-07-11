@@ -66,17 +66,42 @@ namespace CodeWarsTest
             //Console.WriteLine(weirdStringResult2);
             //Console.WriteLine(weirdStringResult3);
 
-            string firstLetter = FirstNonRepeatingCharacter.FirstNonRepeatingLetter("a");
-            string firstLetter2 = FirstNonRepeatingCharacter.FirstNonRepeatingLetter("stress");
-            string firstLetter3 = FirstNonRepeatingCharacter.FirstNonRepeatingLetter("moonmen");
-            string firstLetter4 = FirstNonRepeatingCharacter.FirstNonRepeatingLetter("sTreSS");
-            string firstLetter5 = FirstNonRepeatingCharacter.FirstNonRepeatingLetter("checkText");
+            //string firstLetter = FirstNonRepeatingCharacter.FirstNonRepeatingLetter("a");
+            //string firstLetter2 = FirstNonRepeatingCharacter.FirstNonRepeatingLetter("stress");
+            //string firstLetter3 = FirstNonRepeatingCharacter.FirstNonRepeatingLetter("moonmen");
+            //string firstLetter4 = FirstNonRepeatingCharacter.FirstNonRepeatingLetter("sTreSS");
+            //string firstLetter5 = FirstNonRepeatingCharacter.FirstNonRepeatingLetter("checkText");
 
-            Console.WriteLine(firstLetter);
-            Console.WriteLine(firstLetter2);
-            Console.WriteLine(firstLetter3);
-            Console.WriteLine(firstLetter4);
-            Console.WriteLine(firstLetter5);
+            //Console.WriteLine(firstLetter);
+            //Console.WriteLine(firstLetter2);
+            //Console.WriteLine(firstLetter3);
+            //Console.WriteLine(firstLetter4);
+            //Console.WriteLine(firstLetter5);
+
+
+            var collection = new List<char> { 'a', 'b', 'c', 'd', 'e', 'f' };
+            var helper = new PaginationHelper<char>(collection, 4);
+
+            Console.WriteLine($"Total Items: {helper.ItemCount}"); // Output: 6
+            Console.WriteLine($"Total Pages: {helper.PageCount}"); // Output: 2
+
+            // Page 0 has: 'a', 'b', 'c', 'd' (4 items)
+            Console.WriteLine($"Items on Page 0: {helper.PageItemCount(0)}"); // Output: 4
+
+            // Page 1 has: 'e', 'f' (2 items)
+            Console.WriteLine($"Items on Page 1: {helper.PageItemCount(1)}"); // Output: 2
+
+            // Page 2 doesn't exist
+            Console.WriteLine($"Items on Page 2: {helper.PageItemCount(2)}"); // Output: -1
+
+            // Find which page item index 5 ('f') is on
+            Console.WriteLine($"Page of item index 5: {helper.PageIndex(5)}"); // Output: 1
+
+            // Find which page item index 2 ('c') is on
+            Console.WriteLine($"Page of item index 2: {helper.PageIndex(2)}"); // Output: 0
+
+            // Index 20 doesn't exist
+            Console.WriteLine($"Page of item index 20: {helper.PageIndex(20)}"); // Output: -1
 
             Console.ReadKey();
         }
